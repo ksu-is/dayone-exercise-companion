@@ -11,4 +11,8 @@
 
 ## Sprint Two
 
+- [x] Input adopted code into new repository
+- [ ] Adjust and configure code to fit needs
+- [ ] Begin work on front end code
+
 ## Sprint Three
