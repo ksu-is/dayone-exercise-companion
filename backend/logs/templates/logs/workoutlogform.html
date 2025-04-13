@@ -1,0 +1,40 @@
+{% extends "base.html" %} 
+{% block content %}
+<form method = "post">
+{% csrf_token %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+
+   <b> {{ form.day.label }}:</b>
+    {{ form.day }}
+    <hr>
+    <br>
+    <b>{{ form.summary.label }}:</b>
+    {{ form.summary }}
+    <hr>
+    <br>
+    <b>{{ form.goal.label }}:</b>
+    {{ form.goal }}
+    <br>
+    <hr>
+    <b>{{ form.exercises.label }}:</b>
+    {{ form.exercises }}
+    <div class="text-left">
+    <a type="button" class="btn btn-success mt" href="{% url 'users:logout' %}">+</a>
+    </div>
+    <hr>
+    <br>
+    <b>{{ form.muscles.label }}:</b>
+    {{ form.muscles }}
+    
+
+      <button type="submit" class="btn btn-success mt-3">Submit</button>
+
+    </div>
+  </div>
+</div>
+<br>
+</form>
+
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% include "base.html"%}
+{% block content %}
+<form method = "post">
+{% csrf_token %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+
+<b>{{form.reps.label}}</b><br>
+<br>
+{{form.reps}}
+    <hr>
+    
+<b>{{form.reps_unit.label}}</b><br><br>
+
+{{form.reps_unit}}
+    <hr>
+
+<b>{{form.weight.label}}</b><br><br>
+{{form.weight}}
+    <hr>
+<b>{{form.weight_unit.label}}</b><br><br>
+{{form.weight_unit}}
+
+
+      <button type="submit" class="btn btn-success mt-3">Submit</button>
+
+    </div>
+  </div>
+</div>
+<br>
+</form>
+
+{% endblock content %}
